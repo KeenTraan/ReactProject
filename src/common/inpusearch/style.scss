@@ -1,0 +1,19 @@
+/** @format */
+
+input {
+  width: 432px;
+  height: 64px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  padding: 24px 0 24px 27px;
+  background: #e4e4e4;
+}
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+  font-weight: 700;
+  opacity: 0.8;
+  color: #808191;
+}

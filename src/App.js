@@ -1,14 +1,14 @@
 /** @format */
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
-import Explore from "./components/Explore";
-import SideBar from "./common/SideBar";
+import Home from "./view/home/Home";
+import Explore from "./view/Explore";
+import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      <div style={{ display: "flex"}}>
-        <div style={{ marginRight: '20px' }}>
+      <div style={{ display: "flex" }}>
+        <div>
           <SideBar />
         </div>
         <Routes>
