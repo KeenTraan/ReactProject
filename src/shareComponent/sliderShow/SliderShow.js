@@ -54,7 +54,7 @@ export default function SliderShow() {
       <div className="user-containt">
         {userData.map((user) => (
           <div className="content" key={user.id}>
-            <img src={user.avata} className="user-avatar" />
+            <img alt="#" src={user.avata} className="user-avatar" />
             <div className="user-infor">
               <p className="user-text name">{user.name}</p>
               <p className="user-text title">{user.title}</p>

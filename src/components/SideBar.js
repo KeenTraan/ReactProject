@@ -35,13 +35,13 @@ export default function SideBar() {
   return (
     <div className="nav-bar">
       <div className="nav-header">
-        <img src={require("../assets/dolphin1.png")} />
+        <img alt="#" src={require("../assets/dolphin1.png")} />
         <p className="text-header">TeamDolphins</p>
       </div>
       <div className="nav-navigate">
         {dataLink.map((link) => (
           <NavLink to={link.path} className="link" key={link.id}>
-            <img src={link.icon} />
+            <img alt="#" src={link.icon} />
             <p>{link.label}</p>
           </NavLink>
         ))}
