@@ -1,0 +1,19 @@
+/** @format */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 339px;
+  gap: 55px;
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #11142d;
+  }
+  author {
+    font-weight: 500;
+    font-size: 13px;
+    color: #11142D;
+  }
+}

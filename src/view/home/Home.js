@@ -5,7 +5,8 @@ import InputSearch from "../../shareComponent/inputSearch/InputSearch";
 import SliderShow from "../../shareComponent/sliderShow/SliderShow";
 import Post from "../../shareComponent/postcontainer/Posts";
 import avata from "../../assets/Avatar.png";
-
+import SideBar from "../../shareComponent/sidebar/Sidebar";
+import { POSTTOP } from "../../constant/index";
 const dataPost = [
   {
     id: 1,
@@ -30,11 +31,30 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-  }, 
+  },
+]
+const postTopTrending = [
+  {
+    id: 1,
+    img: POSTTOP.IMG,
+    title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons1',
+    author: 'Grabriel Erickson1'
+  },
+  {
+    id: 2,
+    // img: POSTTOP.IMG,
+    title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons2',
+    author: 'Grabriel Erickson2'
+  }, {
+    id: 3,
+    img: POSTTOP.IMG,
+    title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons3',
+    author: 'Grabriel Erickson3'
+  },
 ]
 export default function Home() {
   return (
-    <div style={{ display: "flex", flexDirection: "column"}}>
+    <div style={{ display: "flex", flexDirection: "column", width: '80vw' }}>
       <div className="hearder">
         <InputSearch />
         <div className="avata">
@@ -55,6 +75,7 @@ export default function Home() {
       <SliderShow />
       <div className="content">
         <Post data={dataPost} />
+        <SideBar data={postTopTrending} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 import '../postcontainer/style.scss'
 export default function Post(props) {
   return (
-    <div>
+    <div style={{ width: '100%' }}>
       {props.data.map(post => (
         <div className='posts' key={post.id}>
           <div className="author">

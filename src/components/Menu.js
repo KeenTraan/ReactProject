@@ -4,7 +4,7 @@ import icon from "../assets/icon.png";
 import bookmark from "../assets/Vector.png";
 import pencil from "../assets/PencilSimpleLine.png";
 import { NavLink } from "react-router-dom";
-import "./styles/sidebar.scss";
+import "./styles/style.scss";
 const dataLink = [
   {
     id: 1,
