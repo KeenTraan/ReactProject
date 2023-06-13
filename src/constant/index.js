@@ -1,5 +1,14 @@
 import IMG from "../assets/img-content-autolayout.png";
-const POSTTOP = {
+import explore from "../assets/Discovery.png";
+import icon from "../assets/icon.png";
+import bookmark from "../assets/Vector.png";
+import pencil from "../assets/PencilSimpleLine.png";
+export const POSTTOP = {
   IMG: IMG
 }
-export  { POSTTOP }
+export const ICONS = {
+  EXPLORE: explore,
+  ICON: icon,
+  BOOKMARK: bookmark,
+  PENCIL: pencil
+}

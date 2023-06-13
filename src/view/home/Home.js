@@ -15,6 +15,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
+      time: 10
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
+      time: 19
   },
   {
     id: 3,
@@ -31,6 +33,16 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
+      time: 20
+  },
+  {
+    id: 4,
+    avata: avata,
+    author: "Đặng Tuấn Phong",
+    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
+    content:
+      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
+      time: 12
   },
 ]
 const postTopTrending = [

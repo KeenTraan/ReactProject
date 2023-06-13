@@ -9,7 +9,7 @@ export default function Post(props) {
             <img src={post.avata} alt="#" />
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span>{post.author}</span>
-              <span className='time'>12 minutes ago</span>
+              <span className='time'>{post.time} minutes ago</span>
             </div>
           </div>
           <div className='title'>

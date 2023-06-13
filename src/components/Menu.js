@@ -1,34 +1,31 @@
 /** @format */
-import explore from "../assets/Discovery.png";
-import icon from "../assets/icon.png";
-import bookmark from "../assets/Vector.png";
-import pencil from "../assets/PencilSimpleLine.png";
+import { ICONS } from '../constant/index'
 import { NavLink } from "react-router-dom";
-import "./styles/style.scss";
+import "../components/style.scss";
 const dataLink = [
   {
     id: 1,
     label: "New Feed",
     path: "/",
-    icon: icon,
+    icon: ICONS.ICON,
   },
   {
     id: 2,
     label: "Explore",
     path: "/explore",
-    icon: explore,
+    icon: ICONS.EXPLORE,
   },
   {
     id: 3,
     label: "Bookmark",
     path: "/bookmark",
-    icon: bookmark,
+    icon: ICONS.BOOKMARK,
   },
   {
     id: 4,
     label: "My Posts",
     path: "/posts",
-    icon: pencil,
+    icon: ICONS.PENCIL,
   },
 ];
 export default function SideBar() {
@@ -41,12 +38,25 @@ export default function SideBar() {
       <div className="nav-navigate">
         {dataLink.map((link) => (
           <NavLink to={link.path} className="link" key={link.id}>
-            <img alt="#" src={link.icon} />
-            <p>{link.label}</p>
+            <div className="icons">
+              <img alt="#" src={link.icon} />
+            </div>
+            <div className="label">
+              <p>{link.label}</p>
+            </div>
           </NavLink>
         ))}
       </div>
       <div className="line"></div>
+      <div style={{ marginTop: '59px' }} className="trending-tag">
+        <div>Trending Tag</div>
+        <div className="tag-link">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># JavaScript</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># Node JS</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># React JS</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># Vue JS</a>
+        </div>
+      </div>
     </div>
   );
 }

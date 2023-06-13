@@ -11,6 +11,7 @@ const userData = [
     title: "Call of Duty",
     view: formatter(28000),
     avata: user1,
+    // background: "#FFA2C0"
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const userData = [
     title: "Call of Duty",
     view: formatter(28000),
     avata: user2,
+    // background: "#FFA2C0"
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const userData = [
     title: "Call of Duty",
     view: formatter(28000),
     avata: user3,
+    // background: "#FFA2C0"
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const userData = [
     title: "Call of Duty",
     view: formatter(28000),
     avata: user4,
+    // background: "#FFA2C0"
   },
 
   {
@@ -40,6 +44,7 @@ const userData = [
     title: "Call of Duty",
     view: formatter(28000),
     avata: user1,
+    // background: "#FFA2C0"
   },
 ];
 function formatter(number) {
