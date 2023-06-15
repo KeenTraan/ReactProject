@@ -1,16 +1,35 @@
-export default function ButtonDropDown() {
+import { useState,createRef } from "react"
+import "../button/style.scss"
+export default function ButtonDropDown(props) {
+
+  let textInput = createRef();
+
+  const [showOption, setOption] = useState(false)
+  // const [inpurValue, setInputValue] = useState("")
+  const handleClick = () => {
+
+    console.log(textInput.current.value);
+    // setInputValue(event.target.value)
+    setOption(!showOption)
+  }
+  const handleCloseList = () => {
+    setOption(false)
+  }
   return (
-    <div>
-      <input onClick={handleClick}/>
-      <div>
-        <p>1 week</p>
-        <p>1 month</p>
-        <p>3 month</p>
-        <p>6 month</p>
+    <div >
+      <div className="dropdown" onBlur={handleCloseList} >
+        <input ref={textInput} type="submit" value={""} onClick={handleClick} className="input-doropdown" />
+        <img src={require('../../assets/Arrrow Copy.png')} alt="#" className="icon" />
+      </div>
+      <div className="list-item">
+        {
+          props.data.map((item) => (
+            showOption ? (
+              <div onClick={handleCloseList} className="select-item" key={item.id}>{item.time}</div>
+            ) : null
+          ))
+        }
       </div>
     </div>
   )
-}
-function handleClick() {
-  
 }

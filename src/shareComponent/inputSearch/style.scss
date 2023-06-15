@@ -1,6 +1,6 @@
 /** @format */
 
-input {
+.input-search {
   width: 432px;
   height: 64px;
   border-radius: 16px;
@@ -9,10 +9,10 @@ input {
   padding: 24px 0 24px 27px;
   background: #e4e4e4;
 }
-input::-webkit-search-cancel-button {
+.input-search::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
-input::-webkit-input-placeholder {
+.input-search::-webkit-input-placeholder {
   font-weight: 700;
   opacity: 0.8;
   color: #808191;
