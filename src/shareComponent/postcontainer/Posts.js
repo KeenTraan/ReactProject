@@ -1,8 +1,12 @@
 /** @format */
 import '../postcontainer/style.scss'
+import RecommentPost from '../recommentPost/RecommentPost'
+// const recommentPost = [
+//   {title: 'recommentPost'}
+// ]
 export default function Post(props) {
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%' }} className='test'>
       {props.data.map(post => (
         <div className='posts' key={post.id}>
           <div className="author">
@@ -20,6 +24,7 @@ export default function Post(props) {
           </div>
         </div>
       ))}
+      <RecommentPost />
     </div>
   )
 }

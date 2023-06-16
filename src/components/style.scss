@@ -47,9 +47,14 @@
     margin-bottom: 27px;
     .text-header {
       font-style: normal;
-      font-weight: 400;
+      font-weight: 800;
       font-size: 20px;
       color: black;
+    }
+    img {
+      width: 100px;
+      height: 70px;
+      transform: rotateY(160deg);
     }
   }
   .line {
@@ -78,7 +83,7 @@
       font-weight: 600;
       font-size: 14px;
     }
-    a:hover{
+    a:hover {
       color: #6c5dd3;
     }
   }

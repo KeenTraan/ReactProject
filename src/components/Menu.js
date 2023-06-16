@@ -32,7 +32,7 @@ export default function Menu() {
   return (
     <div className="nav-bar">
       <div className="nav-header">
-        <img alt="#" src={require("../assets/dolphin1.png")} />
+        <img alt="#" src={require("../assets/buncee-nom-nom-be-all-you-can-be.gif")} />
         <p className="text-header">TeamDolphins</p>
       </div>
       <div className="nav-navigate">
