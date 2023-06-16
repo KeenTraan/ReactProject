@@ -15,7 +15,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-      time: 10
+    time: 10
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-      time: 19
+    time: 19
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-      time: 20
+    time: 20
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const dataPost = [
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-      time: 12
+    time: 12
   },
 ]
 const postTopTrending = [
@@ -50,18 +50,21 @@ const postTopTrending = [
     id: 1,
     img: POSTTOP.IMG,
     title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons1',
-    author: 'Grabriel Erickson1'
+    author: 'Grabriel Erickson1',
+    link: "https://reactrouter.com/en/main/components/navigate"
   },
   {
     id: 2,
     // img: POSTTOP.IMG,
     title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons2',
-    author: 'Grabriel Erickson2'
+    author: 'Grabriel Erickson2',
+    link: "#"
   }, {
     id: 3,
     img: POSTTOP.IMG,
     title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons3',
-    author: 'Grabriel Erickson3'
+    author: 'Grabriel Erickson3',
+    link: "#"
   },
 ]
 export default function Home() {

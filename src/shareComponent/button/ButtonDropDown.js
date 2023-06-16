@@ -1,31 +1,36 @@
-import { useState,createRef } from "react"
+import { useState } from "react"
 import "../button/style.scss"
+
 export default function ButtonDropDown(props) {
-
-  let textInput = createRef();
-
   const [showOption, setOption] = useState(false)
-  // const [inpurValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState("1 Week")
   const handleClick = () => {
-
-    console.log(textInput.current.value);
-    // setInputValue(event.target.value)
     setOption(!showOption)
+  }
+  const handleChoosed = (item) => {
+    setInputValue(item.time)
+    handleCloseList()
   }
   const handleCloseList = () => {
     setOption(false)
   }
+
   return (
     <div >
-      <div className="dropdown" onBlur={handleCloseList} >
-        <input ref={textInput} type="submit" value={""} onClick={handleClick} className="input-doropdown" />
+      <div className="dropdown" onBlur={handleCloseList} onClick={handleClick}>
+        <div className="show-value">{inputValue}</div>
         <img src={require('../../assets/Arrrow Copy.png')} alt="#" className="icon" />
       </div>
       <div className="list-item">
         {
           props.data.map((item) => (
             showOption ? (
-              <div onClick={handleCloseList} className="select-item" key={item.id}>{item.time}</div>
+              <div
+                onClick={() => handleChoosed(item)}
+                className="select-item"
+                key={item.id}>
+                {item.time}
+              </div>
             ) : null
           ))
         }

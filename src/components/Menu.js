@@ -28,7 +28,7 @@ const dataLink = [
     icon: ICONS.PENCIL,
   },
 ];
-export default function SideBar() {
+export default function Menu() {
   return (
     <div className="nav-bar">
       <div className="nav-header">
@@ -52,9 +52,9 @@ export default function SideBar() {
         <div>Trending Tag</div>
         <div className="tag-link">
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># JavaScript</a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># Node JS</a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># React JS</a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank"># Vue JS</a>
+          <a href="https://nodejs.dev/en/learn/" target="blank"># Node JS</a>
+          <a href="https://react.dev/" target="blank"># React JS</a>
+          <a href="https://vuejs.org/" target="blank"># Vue JS</a>
         </div>
       </div>
     </div>
