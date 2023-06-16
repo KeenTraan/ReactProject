@@ -12,9 +12,13 @@
     color: #11142d;
     text-decoration: none;
   }
+  .title:hover {
+    text-decoration: underline;
+    color: #6c5dd3;
+  }
   author {
     font-weight: 500;
     font-size: 13px;
-    color: #11142D;
+    color: #11142d;
   }
 }

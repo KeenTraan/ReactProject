@@ -1,9 +1,12 @@
 /** @format */
 import '../postcontainer/style.scss'
 import RecommentPost from '../recommentPost/RecommentPost'
-// const recommentPost = [
-//   {title: 'recommentPost'}
-// ]
+const recommentPost = [
+  { id: 1, title: 'recommentPost' },
+  { id: 2, title: 'recommentPost' },
+  { id: 3, title: 'recommentPost' }
+
+]
 export default function Post(props) {
   return (
     <div style={{ width: '100%' }} className='test'>
@@ -24,7 +27,7 @@ export default function Post(props) {
           </div>
         </div>
       ))}
-      <RecommentPost />
+      <RecommentPost recommentPost={recommentPost} />
     </div>
   )
 }
