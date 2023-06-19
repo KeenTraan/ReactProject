@@ -7,7 +7,7 @@ import user4 from "../../assets/userAvata/avatar-img3.png";
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import '../testslider/slidershow.scss'
+import './slidershow.scss'
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const userData = [
@@ -94,7 +94,7 @@ const SliderShow = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         slidesPerView={5}
@@ -103,11 +103,11 @@ const SliderShow = () => {
         className="mySwiper"
       >
         {userData.map(user => (
-          <div >
-            <SwiperSlide className='swiper'>
+          <div key={user.id}>
+            <SwiperSlide className='swiper' key={user.id}>
               <img src={user.avata} alt='#' />
-              <div className="user-infor">
-                <p className="user-text name">{user.name}</p>
+              <div className="user-infor" >
+                <p className="user-text name" >{user.name}</p>
                 <p className="user-text title">{user.title}</p>
                 <div className="footer-content">
                   <div className="dot"></div>

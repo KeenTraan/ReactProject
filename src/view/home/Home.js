@@ -2,7 +2,7 @@
 
 import "../home/home.scss";
 import InputSearch from "../../shareComponent/inputSearch/InputSearch";
-import SliderShow from "../../shareComponent/testslider/Slideshow";
+import SliderShow from "../../shareComponent/slideshow/Slideshow";
 import Post from "../../shareComponent/postcontainer/Posts";
 import avata from "../../assets/Avatar.png";
 import SideBar from "../../shareComponent/sidebar/Sidebar";
