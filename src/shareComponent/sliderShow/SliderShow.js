@@ -55,11 +55,22 @@ function formatter(number) {
 export default function SliderShow() {
   return (
     <div className="slider-show">
-      <p>Trending Channels</p>
+      <div style={{ display: "flex" }}>
+        <p>Trending Channels</p>
+        <div className="slider-arow">
+          <div className="arow" onClick={handlePreve}>
+            <img src={require("../../assets/Path.png")} alt="#" className="first-arow" />
+          </div>
+          <div className="arow" onClick={handleNext}>
+            <img src={require("../../assets/Path.png")} alt="#" />
+          </div>
+        </div>
+      </div>
       <div className="user-containt">
         {userData.map((user) => (
           <div className="content" key={user.id}>
             <img alt="#" src={user.avata} className="user-avatar" />
+
             <div className="user-infor">
               <p className="user-text name">{user.name}</p>
               <p className="user-text title">{user.title}</p>
@@ -73,4 +84,11 @@ export default function SliderShow() {
       </div>
     </div>
   );
+}
+function handleNext() {
+  console.log("onclick")
+}
+function handlePreve() {
+  console.log("onclick")
+
 }
