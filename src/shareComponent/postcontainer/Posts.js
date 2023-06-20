@@ -1,11 +1,11 @@
 /** @format */
 import '../postcontainer/style.scss'
 import RecommentPost from '../recommentPost/RecommentPost'
+import { RECOMMENT } from '../../constant/index'
 const recommentPost = [
-  { id: 1, title: 'recommentPost' },
-  { id: 2, title: 'recommentPost' },
-  { id: 3, title: 'recommentPost' }
-
+  { id: 1, name: 'Vinh', img: RECOMMENT.AVATA, followers: 536, start: 23, video: 120, tags: ["Express JS", "Node Js", "Javascript",] },
+  { id: 2, name: 'Duong', img: RECOMMENT.AVATA, followers: 536, start: 23, video: 120, tags: ["Express JS", "Node Js", "Javascript"] },
+  { id: 3, name: 'Phong', img: RECOMMENT.AVATA, followers: 536, start: 23, video: 120, tags: ["Express JS", "Node Js", "Javascript"] },
 ]
 export default function Post(props) {
   return (
@@ -25,9 +25,11 @@ export default function Post(props) {
           <div className='content'>
             {post.content}
           </div>
+          {post.id === 2 ?
+            <RecommentPost recommentPost={recommentPost} /> : null
+          }
         </div>
       ))}
-      <RecommentPost recommentPost={recommentPost} />
     </div>
   )
 }

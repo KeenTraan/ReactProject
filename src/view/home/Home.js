@@ -55,7 +55,6 @@ const postTopTrending = [
   },
   {
     id: 2,
-    // img: POSTTOP.IMG,
     title: 'Why You Should Use Node.js for Ecommerce: Pros and Cons2',
     author: 'Grabriel Erickson2',
     link: "#"

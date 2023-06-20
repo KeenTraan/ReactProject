@@ -1,0 +1,81 @@
+/** @format */
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 760px;
+  margin: 11px 0 30px 0;
+  .recomment-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #11142d;
+  }
+}
+.recomment-container {
+  display: flex;
+  background: white;
+  .recomment-content {
+    display: flex;
+    gap: 15px;
+    .recomment-tag {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 201px;
+      .tags {
+        cursor: pointer;
+        background: rgba($color: #6c5dd3, $alpha: 0.1);
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 13px;
+        color: #3f8cff;
+      }
+    }
+    .information {
+      display: flex;
+      gap: 10px;
+    }
+    .recomment-infro {
+      background: white;
+      margin-right: 49px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      .name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #11142d;
+      }
+      .follower,
+      .video {
+        color: #11142d;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .btn {
+        background: #6c5dd3;
+        border-radius: 16px;
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        width: 160px;
+        height: 28px;
+        cursor: pointer;
+      }
+    }
+  }
+  .recomment-avata {
+    border-radius: 25px;
+    background: #ffce73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+    }
+  }
+}
