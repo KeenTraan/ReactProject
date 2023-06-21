@@ -1,15 +1,15 @@
 /** @format */
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
-import Explore from "./components/Explore";
-import SideBar from "./common/SideBar";
+import Home from "./view/home/Home";
+import Explore from "./view/Explore";
+import Menu from "./components/Menu";
 function App() {
   return (
     <>
-      <div style={{ display: "flex"}}>
-        <div style={{ marginRight: '20px' }}>
-          <SideBar />
+      <div style={{ display: "flex" }}>
+        <div>
+          <Menu />
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
