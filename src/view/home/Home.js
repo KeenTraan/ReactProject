@@ -6,10 +6,11 @@ import SliderShow from "../../shareComponent/slideshow/Slideshow";
 import Post from "../../shareComponent/postcontainer/Posts";
 import avata from "../../assets/Avatar.png";
 import SideBar from "../../shareComponent/sidebar/Sidebar";
-import { POSTTOP } from "../../constant/index";
+import { POSTTOP, POST } from "../../constant/index";
 const dataPost = [
   {
     id: 1,
+    img: POST.IMG,
     avata: avata,
     author: "Đặng Tuấn Phong",
     title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
@@ -43,6 +44,16 @@ const dataPost = [
     content:
       "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
     time: 12
+  },
+  {
+    id: 5,
+    img: POST.IMG,
+    avata: avata,
+    author: "Đặng Tuấn Phong",
+    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
+    content:
+      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
+    time: 15
   },
 ]
 const postTopTrending = [

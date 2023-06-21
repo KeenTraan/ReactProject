@@ -1,6 +1,6 @@
 /** @format */
-import '../postcontainer/style.scss'
-import RecommentPost from '../recommentPost/RecommentPost'
+import '../postcontainer/poststyle.scss'
+import Recomment from '../recomment/RecommentPost'
 import { RECOMMENT } from '../../constant/index'
 const recommentPost = [
   { id: 1, name: 'Vinh', img: RECOMMENT.AVATA, followers: 536, start: 23, video: 120, tags: ["Express JS", "Node Js", "Javascript",] },
@@ -9,9 +9,9 @@ const recommentPost = [
 ]
 export default function Post(props) {
   return (
-    <div style={{ width: '100%' }} className='test'>
-      {props.data.map(post => (
-        <div className='posts' key={post.id}>
+    <div style={{ width: '100%' }}>
+      {props.data.map((post, index) => (
+        <div className='posts' key={post.id} index={index}>
           <div className="author">
             <img src={post.avata} alt="#" />
             <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -19,14 +19,21 @@ export default function Post(props) {
               <span className='time'>{post.time} minutes ago</span>
             </div>
           </div>
-          <div className='title'>
-            {post.title}
+          <div style={{ display: "flex" }}>
+            <div className='post-content'>
+              <div className='title'>
+                {post.title}
+              </div>
+              <div className='content'>
+                {post.content}
+              </div>
+            </div>
+            <div>
+              {post.img ? <img src={post.img} alt='#' /> : null}
+            </div>
           </div>
-          <div className='content'>
-            {post.content}
-          </div>
-          {post.id === 2 ?
-            <RecommentPost recommentPost={recommentPost} /> : null
+          {index === 1 ?
+            <Recomment recommentPost={recommentPost} /> : null
           }
         </div>
       ))}

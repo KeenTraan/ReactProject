@@ -23,6 +23,7 @@
     }
   }
   .title {
+    width: 421px;
     font-weight: 500;
     font-size: 18px;
     color: #11142d;
@@ -32,10 +33,11 @@
     font-weight: 600;
     font-size: 14px;
     color: #808191;
-    width: 680px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    width: 456px;
+    height: 66px;
     display: inline-block;
+  }
+  .post-content {
+    margin-right: 8px;
   }
 }

@@ -7,7 +7,7 @@ import user4 from "../../assets/userAvata/avatar-img3.png";
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import './slidershow.scss'
+import './slidershowstyle.scss'
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const userData = [

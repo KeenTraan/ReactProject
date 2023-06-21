@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../button/style.scss"
+import "../button/buttonstyle.scss"
 
 export default function ButtonDropDown(props) {
   const [showOption, setOption] = useState(false)

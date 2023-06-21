@@ -1,5 +1,5 @@
 import ButtonDropDown from "../button/ButtonDropDown";
-import "../sidebar/style.scss";
+import "../sidebar/sidebarstyle.scss";
 const dataInput = [{
   id: 1,
   time: "1 Week",

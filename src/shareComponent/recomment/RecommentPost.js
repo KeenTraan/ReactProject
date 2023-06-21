@@ -1,4 +1,4 @@
-import "../recommentPost/recommentpost.scss";
+import "./recommentstyle.scss";
 export default function RecommentPost(props) {
   return (
     <div className="layout">

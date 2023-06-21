@@ -1,5 +1,5 @@
 /** @format */
-import "./style.scss";
+import "./inputstyle.scss";
 export default function InputSearch() {
   return (
     <input
