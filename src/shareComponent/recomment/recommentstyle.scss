@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 50px;
   width: 760px;
-  margin: 11px 0 30px 0;
+  margin: 23px 0 25px 0;
   .recomment-title {
     font-weight: 500;
     font-size: 24px;
@@ -13,19 +13,27 @@
 }
 .recomment-container {
   display: flex;
-  width: 760px;
   background: white;
+  width: 760px;
+  margin-top: -30px;
+  .recomment-swiper {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 16px;
+    height: 190px;
+  }
   .recomment-content {
     display: flex;
     gap: 15px;
     .recomment-tag {
-      display: flex;
-      gap: 5px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
       align-items: center;
       width: 201px;
       .tags {
         cursor: pointer;
+        width: max-content;
         background: rgba($color: #6c5dd3, $alpha: 0.1);
         border-radius: 5px;
         font-weight: 700;

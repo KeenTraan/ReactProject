@@ -1,0 +1,49 @@
+/** @format */
+
+.trending-layout {
+  margin-top: 42px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  .trading-tag-container {
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 18px;
+  }
+  .trending-header {
+    font-weight: 500;
+    font-size: 24px;
+    color: #11142d;
+  }
+  .tranding-container {
+    display: flex;
+    gap: 14px;
+    padding: 7px 0 7px 4px;
+    align-items: center;
+  }
+  .tranding-content {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #11142d;
+    }
+    .article {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .dot {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background: #ff754c;
+      }
+      .article {
+        font-weight: 500;
+        font-size: 12px;
+        color: #808191;
+      }
+    }
+  }
+}
