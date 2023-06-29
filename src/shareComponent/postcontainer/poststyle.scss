@@ -5,8 +5,7 @@
   .author {
     display: flex;
     gap: 8px;
-    margin-bottom: 18px;
-    span {
+    .author {
       color: #11142d;
       font-weight: 500;
       font-size: 16px;
@@ -20,24 +19,48 @@
     img {
       width: 48px;
       height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
   .title {
-    width: 421px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     color: #11142d;
     margin-bottom: 8px;
+    font-family: "Poppins", sans-serif;
   }
   .content {
     font-weight: 600;
     font-size: 14px;
     color: #808191;
-    width: 456px;
-    height: 66px;
-    display: inline-block;
+    max-width: 456px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .post-content {
     margin-right: 8px;
+    // border: 1px solid red;
+  }
+  .post-image {
+    width: 255px;
+    height: 140px;
+    object-fit: contain;
+  }
+  .hash-tag {
+    margin-top: 12px;
+    background: rgba($color: #6c5dd3, $alpha: 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 24px;
+    font-size: 13px;
+    color: #3f8cff;
+    font-weight: 700;
   }
 }
