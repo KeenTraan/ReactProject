@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import { Pagination } from "swiper";
 export default function RecommentPost(props) {
   return (
     <div className="layout">
@@ -11,11 +10,7 @@ export default function RecommentPost(props) {
       <div className="recomment-container">
         <Swiper
           spaceBetween={10}
-          // pagination={{
-          //   clickable: true,
-          // }}
           slidesPerView={2}
-          // modules={[Pagination]}
           className="my-swiper"
         >
           {props.recommentPost.map(item => (

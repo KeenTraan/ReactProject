@@ -1,12 +1,14 @@
 /** @format */
 
 .input-search {
+  position: relative;
+  // border: 1px solid red;
   width: 432px;
   height: 64px;
   border-radius: 16px;
   border: none;
   outline: none;
-  padding: 24px 0 24px 27px;
+  padding: 24px 24px 24px 27px;
   background: #e4e4e4;
 }
 .input-search::-webkit-search-cancel-button {
@@ -16,4 +18,26 @@
   font-weight: 700;
   opacity: 0.8;
   color: #808191;
+}
+.list-user {
+  background-color: #6c5dd3;
+  position: absolute;
+  top: 93px;
+  left: 355px;
+  color: white;
+  border-radius: 5px;
+  height: max-content;
+  width: 432px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+.user {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user:hover {
+  background-color: #258dfc;
+  color: white;
 }

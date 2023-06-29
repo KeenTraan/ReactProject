@@ -4,58 +4,13 @@ import "../home/home.scss";
 import InputSearch from "../../shareComponent/inputSearch/InputSearch";
 import SliderShow from "../../shareComponent/slideshow/Slideshow";
 import Post from "../../shareComponent/postcontainer/Posts";
-import avata from "../../assets/Avatar.png";
+// import avata from "../../assets/Avatar.png";
 import SideBar from "../../shareComponent/sidebar/Sidebar";
-import { POSTTOP, POST } from "../../constant/index";
-const dataPost = [
-  {
-    id: 1,
-    img: POST.IMG,
-    avata: avata,
-    author: "Đặng Tuấn Phong",
-    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
-    content:
-      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-    time: 10
-  },
-  {
-    id: 2,
-    avata: avata,
-    author: "Đặng Tuấn Phong",
-    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
-    content:
-      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-    time: 19
-  },
-  {
-    id: 3,
-    avata: avata,
-    author: "Đặng Tuấn Phong",
-    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
-    content:
-      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-    time: 20
-  },
-  {
-    id: 4,
-    avata: avata,
-    author: "Đặng Tuấn Phong",
-    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
-    content:
-      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-    time: 12
-  },
-  {
-    id: 5,
-    img: POST.IMG,
-    avata: avata,
-    author: "Đặng Tuấn Phong",
-    title: "Why You Should Use Node.js for Ecommerce: Pros and Cons",
-    content:
-      "Node.js is a JavaScript runtime environment which developers use to build scalable network applications. You can use it in various software, including ecommerce platforms.To deliver high performance …",
-    time: 15
-  },
-]
+// import { POSTTOP, POST } from "../../constant/index";
+import { POSTTOP } from "../../constant/index";
+import { getPost } from "../../api";
+import { useEffect, useState } from "react";
+
 const postTopTrending = [
   {
     id: 1,
@@ -77,7 +32,18 @@ const postTopTrending = [
     link: "#"
   },
 ]
+
+
+
 export default function Home() {
+  const [posts, setPosts] = useState([]);
+  async function fetchData() {
+    const data = await getPost()
+    setPosts(data)
+  }
+  useEffect(() => {
+    fetchData()
+  }, [])
   return (
     <div style={{ display: "flex", flexDirection: "column", width: '80vw' }}>
       <div className="hearder">
@@ -99,7 +65,7 @@ export default function Home() {
       </div>
       <SliderShow />
       <div className="content">
-        <Post data={dataPost} />
+        <Post data={posts} />
         <SideBar data={postTopTrending} />
       </div>
     </div>
